@@ -1,120 +1,45 @@
 body {
+  background: #18181a;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(120deg, #27272A 60%, #18181B 100%);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
 .container {
-  background: rgba(34, 34, 38, 0.95);
-  border-radius: 16px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.25);
-  padding: 48px 32px;
-  min-width: 350px;
-  width: 400px;
+  background: #23232b;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px #1113;
+  padding: 2rem 3rem;
+  width: 320px;
 }
-
-.forms h2 {
-  color: #fafafa;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 32px;
+h1, label {
+  color: #e1e1e6;
 }
-
-/* Google Sign-In Button Wrapper */
-.google-signin-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 24px;
-}
-
-.google-signin-wrapper .g_id_signin {
-  width: 100% !important;
-}
-
-/* Divider styling */
-.divider {
-  display: flex;
-  align-items: center;
-  margin: 24px 0;
-  color: #888;
-  font-size: 0.9em;
-}
-
-.divider::before,
-.divider::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: #444;
-}
-
-.divider span {
-  padding: 0 16px;
-}
-
-.input-box {
-  margin: 24px 0;
-}
-
-.input-box input {
+input {
   width: 100%;
-  padding: 12px;
-  border: none;
+  padding: .7rem;
+  background: #23232b;
+  border: 1px solid #555;
   border-radius: 8px;
-  background: #222227;
-  color: #fff;
-  font-size: 1em;
-  box-sizing: border-box;
+  margin-bottom: 1rem;
+  color: #e1e1e6;
 }
-
-.input-box input:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #6366f1;
-}
-
-.input-box input::placeholder {
-  color: #999;
-}
-
-.actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 8px 0 20px 0;
-  font-size: 0.95em;
-  color: #bbb;
-}
-
-.actions a {
-  color: #6366f1;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.btn {
-  background: linear-gradient(90deg, #6366f1 60%, #4338ca 100%);
-  color: #fff;
-  border: none;
-  padding: 14px;
+button {
   width: 100%;
+  padding: 0.75rem;
   border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg,#01f2c1 40%,#0a9cfb 100%);
+  color: #18181a;
   font-weight: bold;
-  font-size: 1em;
-  cursor: pointer;
-  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.12);
-  transition: background 0.2s;
-  box-sizing: border-box;
+  margin-bottom: 1rem;
 }
-
-.btn:hover {
-  background: linear-gradient(90deg, #4338ca 60%, #3730a3 100%);
-}
-
-.toggle-link {
+.switch {
+  color: #01f2c1;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  display: block;
   text-align: center;
-  margin
+}
