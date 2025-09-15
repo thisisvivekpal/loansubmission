@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Signup</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Google Identity Services API -->
+  <script src="https://accounts.google.com/gsi/client" async></script>
+</head>
+<body>
+  <div class="container">
+    <div class="forms">
+      <!-- Google Sign-In Configuration -->
+      <div id="g_id_onload"
+           data-client_id="1015045573265-9hejb06co5h9kr1lg5drnu6nkckmsrbi.apps.googleusercontent.com"
+           data-callback="handleGoogleSignIn"
+           data-auto_prompt="true"
+           data-auto_select="false"
+           data-cancel_on_tap_outside="false">
+      </div>
+      
+      <form class="login-form" id="loginForm">
+        <h2>Login</h2>
+        
+        <!-- Google Sign-In Button -->
+        <div class="google-signin-wrapper">
+          <div class="g_id_signin" 
+               data-type="standard" 
+               data-size="large" 
+               data-theme="filled_black" 
+               data-text="signin_with"
+               data-shape="rectangular"
+               data-logo_alignment="left">
+          </div>
+        </div>
+        
+        <div class="divider">
+          <span>or</span>
+        </div>
+        
+        <div class="input-box">
+          <input type="text" placeholder="Username" required>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Password" required>
+        </div>
+        <div class="actions">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <p class="toggle-link">Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+      </form>
+      
+      <form class="signup-form" id="signupForm" style="display:none;">
+        <h2>Sign Up</h2>
+        
+        <!-- Google Sign-In Button for Signup -->
+        <div class="google-signin-wrapper">
+          <div class="g_id_signin" 
+               data-type="standard" 
+               data-size="large" 
+               data-theme="filled_black" 
+               data-text="signup_with"
+               data-shape="rectangular"
+               data-logo_alignment="left">
+          </div>
+        </div>
+        
+        <div class="divider">
+          <span>or</span>
+        </div>
+        
+        <div class="
